@@ -29,3 +29,10 @@ dieList=['2d6','3d8','20d20','8d12']
             result +=r
         return result,rA    
     
+def d20(n)
+    if n == 20:
+        return "crit hit"
+    if n ==0:
+        return "crit fail"
+    if n >=10:
+        return "success"
