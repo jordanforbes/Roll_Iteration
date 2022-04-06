@@ -36,7 +36,7 @@ class D:
             result +=r
         return result,rA    
     
-def d20(n)
+def d20(n):
     if n == 20:
         return "crit hit"
     if n ==0:
