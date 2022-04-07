@@ -2,17 +2,12 @@ from utility import p,v,hp,sc,s,klax
 import units as u
 from DiceClass import D
 import PySimpleGUI as sg
+from gui import GUI as G
 
 #instantiate units, variables          
 p1,e1= u.Player(),u.Enemy()
 
-
-#debug units
-#p(e1.hp)
-#hp(e1)
-
-#game loop
-#hp=hp(p1)
+### game setup ###
 turn=0
 klax("#####")
 klax("START")
@@ -21,15 +16,7 @@ p()
 sc(p1,e1)
 p()
 
-###gui###
-i=0
-
-layout=[
-        [sg.Text( "hello" )],
-        [sg.Text( i, k='-int-' )],
-        [sg.Button( "Foo", k='-FOO-' )]
-        ]
-
+### game loop ###
 while hp(e1)>0:
     turn+=1
     p("turn "+s(turn))
@@ -39,23 +26,13 @@ while hp(e1)>0:
     sc(p1,e1)
     p()
 
-win = sg.Window('Roll').Layout(layout)
-
-while True:
-    #event, values
-    e, v = win.Read() 
-    
-    if e == sg.WIN_CLOSED or e == 'Close':
-        break 
-    
-    if e == '-FOO-':
-        i+=1
-        win['-int-'].update(i)
-
-win.Close()
+### gui ###
+G.initGUI()
   
-###gui###  
 
+### game end ###
 klax("########")
 klax("GAMEOVER")
 klax("########")
+
+

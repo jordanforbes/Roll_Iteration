@@ -1,5 +1,10 @@
 #dieList=['2d6','3d8','20d20','8d12']
+#debug units
+#p(e1.hp)
+#hp(e1)
 
+#game loop
+#hp=hp(p1)
 
 u1= u.Unit()           
 
