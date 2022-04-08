@@ -6,21 +6,8 @@ from gui import GUI
 p1,e1= U.Player(),U.Enemy()
 
 ### game setup ###
-turn=0
 title("GAMESTART")
-p()
-sc(p1,e1)
-p()
 
-# ### game loop ###
-# while hp(e1)>0:
-#     turn+=1
-#     p("turn "+s(turn))
-#     p1.attack(e1)
-#     p("==end turn==")
-#     p()
-#     sc(p1,e1)
-#     p()
 
 ### gui ###
 GUI.init(p1,e1)

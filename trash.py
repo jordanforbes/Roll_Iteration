@@ -1,3 +1,21 @@
+# turn=0
+
+# p()
+# sc(p1,e1)
+# p()
+
+# ### game loop ###
+# while hp(e1)>0:
+#     turn+=1
+#     p("turn "+s(turn))
+#     p1.attack(e1)
+#     p("==end turn==")
+#     p()
+#     sc(p1,e1)
+#     p()
+
+
+
 #dieList=['2d6','3d8','20d20','8d12']
 #debug units
 #p(e1.hp)

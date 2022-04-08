@@ -35,7 +35,7 @@ class Player(Unit):
         
     def attack(self,t):
         t.damage(self.atk)
-        p(self.name+" attacked "+t.name+ "for "+s(self.atk)+" damage")
+        p(self.name+" attacked "+t.name+ " for "+s(self.atk)+" damage")
 
 #enemy class
 class Enemy(Unit):
@@ -46,7 +46,7 @@ class Enemy(Unit):
     
     def attack(self,t):
         t.damage(self.atk)
-        p(self.name+" attacked "+t.name+ "for "+s(self.atk)+" damage")
+        p(self.name+" attacked "+t.name+ " for "+s(self.atk)+" damage")
         
 ### TEST ###
 
