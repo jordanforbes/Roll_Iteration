@@ -19,7 +19,7 @@ class GUI:
 
         win = sg.Window('Roll').Layout(layout)
 
-        while player.getHP>0:
+        while player.getHP | enemy.getHP > 0:
             #event, values
             e, v = win.Read() 
             
@@ -41,7 +41,7 @@ class GUI:
 pt = Player()
 et = Enemy()
 ut= Unit()
-G = GUI()
-G.init(pt,et)
+# G = GUI()
+# G.init(pt,et)
 
 
