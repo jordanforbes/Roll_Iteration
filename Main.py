@@ -23,7 +23,7 @@ while hp(e1)>0:
     p()
 
 ### gui ###
-GUI.init()
+GUI.init(p1,e1)
   
 
 ### game end ###
