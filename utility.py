@@ -28,3 +28,10 @@ def sc(pl,en):
     v(pl)
     v(en)
     klax()
+    
+#title klaxxons
+def title(x):
+    klax("#####")
+    klax(s(x))
+    klax("#####")
+

@@ -1,17 +1,13 @@
-from utility import p,v,hp,sc,s,klax
-import units as u
-from DiceClass import D
-import PySimpleGUI as sg
-from gui import GUI as G
+from utility import p,v,hp,sc,s,klax,title
+import units as U
+from gui import GUI
 
-#instantiate units, variables          
-p1,e1= u.Player(),u.Enemy()
+# instantiate units, variables          
+p1,e1= U.Player(),U.Enemy()
 
 ### game setup ###
 turn=0
-klax("#####")
-klax("START")
-klax("#####")
+title("GAMESTART")
 p()
 sc(p1,e1)
 p()
@@ -27,12 +23,11 @@ while hp(e1)>0:
     p()
 
 ### gui ###
-G.initGUI()
+GUI.init()
   
 
 ### game end ###
-klax("########")
-klax("GAMEOVER")
-klax("########")
+title("GAMEOVER")
+
 
 

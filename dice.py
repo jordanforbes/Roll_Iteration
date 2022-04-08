@@ -1,9 +1,7 @@
 from random import randint as r 
 
 
-
-#D for Dice
-class D:
+class Dice:
 
     @staticmethod
     def d(s):
